@@ -1,0 +1,11 @@
+{
+	"devDependencies": {
+		"@types/node": "^22.10.1",
+		"i": "^0.3.7",
+		"typescript": "^5.7.2"
+	},
+	"packageManager": "pnpm@9.2.0+sha1.886364ebd6dae009284bebc56ed4296bb6dd557a",
+	"dependencies": {
+		"@google/generative-ai": "^0.21.0"
+	}
+}
