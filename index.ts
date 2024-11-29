@@ -581,8 +581,6 @@ Grand Total	115	19
 
     const result = await model.generateContent(prompt);
 
-    console.log("meep")
-
     const modelResponse = result.response.text();
     return modelResponse;
 }
