@@ -1,22 +1,23 @@
 {
-	"devDependencies": {
-		"@types/node": "^22.10.1",
-		"i": "^0.3.7",
-		"typescript": "^5.7.2"
-	},
-	"packageManager": "pnpm@9.2.0+sha1.886364ebd6dae009284bebc56ed4296bb6dd557a",
-	"dependencies": {
-		"@google/generative-ai": "^0.21.0",
-		"@inquirer/prompts": "^7.1.0",
-		"dotenv": "^16.4.5"
-	},
-	"type": "module",
-	"scripts": {
-		"transpile": "tsc",
-		"build": "tsc --build && node dist/index.js"
-	},
-	"engines": {
-		"pnpm": "^9.2.0",
-		"node": "22"
-	}
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "i": "^0.3.7",
+    "prettier": "3.4.1",
+    "typescript": "^5.7.2"
+  },
+  "packageManager": "pnpm@9.2.0+sha1.886364ebd6dae009284bebc56ed4296bb6dd557a",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "@inquirer/prompts": "^7.1.0",
+    "dotenv": "^16.4.5"
+  },
+  "type": "module",
+  "scripts": {
+    "transpile": "tsc",
+    "build": "tsc --build && node dist/index.js"
+  },
+  "engines": {
+    "pnpm": "^9.2.0",
+    "node": "22"
+  }
 }
