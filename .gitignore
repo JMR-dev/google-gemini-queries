@@ -1,0 +1,18 @@
+# Recommended files to ignore
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+
+# Node.js dependencies
+node_modules/
+
+
+# Environment variables
+.env.*
+
+# Build files
+dist/

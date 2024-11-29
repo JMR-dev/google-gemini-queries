@@ -1,8 +1,10 @@
+import { GoogleGenerativeAI } from "@google/generative-ai";
+import 'dotenv/config';
 
 export async function geminiClient() {
-    const { GoogleGenerativeAI } = require("@google/generative-ai");
 
-    const genAI = new GoogleGenerativeAI("AIzaSyA1DNV0vjqUW9A-RogrP9Xj7o1UW4n9w6g");
+    const genAI = new GoogleGenerativeAI(process.env.API_KEY as string);
+
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro" });
 
     const prompt = `Analyze and summarize the following separation agreement.
@@ -578,7 +580,11 @@ Grand Total	115	19
     `;
 
     const result = await model.generateContent(prompt);
-    console.log(result.response.text());
-}
 
-await geminiClient();
+    console.log("meep")
+
+    const modelResponse = result.response.text();
+    return modelResponse;
+}
+const query = await geminiClient()
+console.log(query);

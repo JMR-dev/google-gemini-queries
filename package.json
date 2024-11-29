@@ -6,6 +6,12 @@
 	},
 	"packageManager": "pnpm@9.2.0+sha1.886364ebd6dae009284bebc56ed4296bb6dd557a",
 	"dependencies": {
-		"@google/generative-ai": "^0.21.0"
+		"@google/generative-ai": "^0.21.0",
+		"dotenv": "^16.4.5"
+	},
+	"type": "module",
+	"scripts": {
+		"start": "tsc",
+		"build": "tsc --build && node dist/index.js"
 	}
 }
